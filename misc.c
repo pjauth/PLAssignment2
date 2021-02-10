@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 
-static char *cr = "copyright (c) David Binkley 2021";
+// static char *cr = "copyright (c) David Binkley 2021";
 
 #include <stdio.h>
 #include <stdlib.h>

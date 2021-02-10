@@ -33,11 +33,13 @@ void int_print(void *d, bool last)
 
 int main()
 {
+    printf("Hello\n");
     int command;
     int *item;
     tHashTable ht;
 
-    ht = ht_initialize (SIZE, int_compare, int_hash);
+    
+    ht = ht_initialize(SIZE, int_compare, int_hash);
     item = (int *) check_malloc(sizeof (int));
 
     while ((command = getchar()) != EOF)

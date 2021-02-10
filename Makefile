@@ -2,11 +2,8 @@ CC = gcc -g -Wall -I../../src
 #
 # -g debug flag
 #
-ht:	main.o ht.o 
+ht:	main.o ht.o misc.o
 	$(CC) -o ht main.o ht.o list.o misc.o 
-
-list.o: list.c list.h
-	$(CC) -c -O list.c -o list.o
 
 main.o:	main.c ht.h
 	$(CC) -c -O main.c -o main.o
